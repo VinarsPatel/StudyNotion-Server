@@ -43,10 +43,10 @@ app.use("/api/v1/profile", profileRoutes)
 app.use("/api/v1/profile", profileRoutes)
 app.use("/api/v1/reach", contactRoutes)
 
-// app.get("/",(req,res)=>{
-//    res.send(`<h1>Server Started</h1>`)
-// });
+app.get("/",(req,res)=>{
+   res.send(`<h1>Server Started</h1>`)
+});
 
 app.listen(PORT, () => {
-//   console.log("Server Started at port : " + PORT + ".")
+  console.log("Server Started at port : " + PORT + ".")
 })
